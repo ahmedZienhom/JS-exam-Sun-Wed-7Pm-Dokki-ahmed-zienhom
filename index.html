@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yummy</title>
+        <link rel="stylesheet" href="css/all.min.css"/>
+        <link rel="stylesheet" href="css/output.css"/>
+        <link rel="shortcut icon" href="logo/logo.png" type="image/x-icon">
+    </head>
+    <body class="bg-black text-white">
+        <div class="h-screen z-10 toggled transition-all duration-500 fixed top-0 flex">
+            <div class="flex bg-black p-7 toggled-bar flex-col justify-between h-screen">
+                <div class="">
+                    <ul class="overflow-hidden">
+                        <li class="py-2 cursor-pointer capitalize relative top-[300px] hover:text-[#FFCC11] transition-all duration-500 search">Search</li>
+                        <li class="py-2 cursor-pointer capitalize relative top-[300px] hover:text-[#FFCC11] transition-all duration-[550ms] categories">categories</li>
+                        <li class="py-2 cursor-pointer capitalize relative top-[300px] hover:text-[#FFCC11] transition-all duration-[600ms] area">area</li>
+                        <li class="py-2 cursor-pointer capitalize relative top-[300px] hover:text-[#FFCC11] transition-all duration-[650ms] ingredients">ingredients</li>
+                        <li class="py-2 cursor-pointer capitalize relative top-[300px] hover:text-[#FFCC11] transition-all duration-700 contact">contact us</li>
+                    </ul>
+                </div>
+                <div class="">
+                    <a href="#"><i class="fa-brands fa-facebook hover:text-[#FFCC11] transition-colors"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter hover:text-[#FFCC11] transition-colors"></i></a>
+                    <a href="#"><i class="fa-solid fa-globe hover:text-[#FFCC11] transition-colors"></i></a>
+                    <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                </div>
+            </div>
+            <div class="flex flex-col justify-between items-center min-h-screen py-6 px-2 bg-white text-black">
+                <img src="logo/logo.png" alt="website image" class="w-12"/>
+                <i class="fa-solid fa-bars toggle-btn fa-2x hover:text-[#FFCC11] transition-colors fa-align-justify"></i>
+                <div class="flex flex-col">
+                    <i class="fa-solid fa-globe mb-2 hover:text-[#FFCC11] transition-colors"></i>
+                    <i class="fa-solid fa-share-nodes hover:text-[#FFCC11] transition-colors"></i>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container searchContainer hidden mx-auto">
+            <div class="flex flex-wrap w-3/4 mx-auto flex-row py-4">
+                <div class="w-full md:w-1/2 p-6">
+                    <input autocomplete="off" type="search" id="searchName" class="w-full bg-transparent px-3 py-2 bg-clip-padding rounded-md block outline-offset-0 shadow-md  shadow-transparent focus:shadow-blue-400 border-gray-300 border border-solid inset-0" placeholder="Here You Can Search By Name">
+                </div>
+                <div class="w-full md:w-1/2 p-6">
+                    <input autocomplete="off" type="search" maxlength="1" id="searchLetter" class="w-full bg-transparent px-3 py-2 bg-clip-padding rounded-md block outline-offset-0 shadow-md  shadow-transparent focus:shadow-blue-400 border-gray-300 border border-solid inset-0" placeholder="Here You Can Search By letter">
+                </div>
+            </div>
+        </div>
+        
+        <div class=" min-h-screen food-list relative">
+            <div class="container mx-auto">
+                <div class="mx-24 py-12 flex flex-wrap" id="rowData">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden min-h-screen relative details">
+            <div class="container mx-auto">
+                <div class="flex mx-32 flex-wrap" id="detailsContainer">
+                    
+                </div>
+                <i class="fa fa-x fa-2x absolute top-8 end-8 cursor-pointer"></i>
+            </div>
+        </div>
+
+
+        <div class="loading-container z-20 absolute top-0 start-0 bottom-0 end-0 h-full w-full m-0 bg-black bg-opacity-25 items-center justify-center hidden">
+            <div class="atom-spinner hidden">
+                <div class="spinner-inner">
+                <div class="spinner-line"></div>
+                <div class="spinner-line"></div>
+                <div class="spinner-line"></div>
+                <!--Chrome renders little circles malformed :(-->
+                <div class="spinner-circle">
+                    &#9679;
+                </div>
+                </div>
+            </div>
+            <div class="fingerprint-spinner hidden">
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+            </div>
+            <div class="fulfilling-bouncing-circle-spinner hidden">
+                <div class="circle"></div>
+                <div class="orbit"></div>
+            </div>
+            <div class="orbit-spinner hidden">
+                <div class="orbit"></div>
+                <div class="orbit"></div>
+                <div class="orbit"></div>
+            </div>
+            <div class="fulfilling-square-spinner hidden">
+                <div class="spinner-inner"></div>
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
