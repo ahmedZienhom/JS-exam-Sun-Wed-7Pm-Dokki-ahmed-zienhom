@@ -656,14 +656,9 @@ video {
   margin: 0.5rem;
 }
 
-.mx-24 {
-  margin-left: 6rem;
-  margin-right: 6rem;
-}
-
-.mx-32 {
-  margin-left: 8rem;
-  margin-right: 8rem;
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .mx-auto {
@@ -723,24 +718,16 @@ video {
   min-height: 100vh;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-1\/3 {
-  width: 33.333333%;
-}
-
 .w-12 {
   width: 3rem;
 }
 
-.w-2\/3 {
-  width: 66.666667%;
-}
-
 .w-3\/4 {
   width: 75%;
+}
+
+.w-5\/6 {
+  width: 83.333333%;
 }
 
 .w-full {
@@ -845,14 +832,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-opacity-75 {
-  --tw-bg-opacity: 0.75;
-}
-
-.bg-opacity-0 {
-  --tw-bg-opacity: 0;
 }
 
 .bg-opacity-25 {
@@ -1070,7 +1049,7 @@ video {
 .atom-spinner .spinner-circle {
   display: block;
   position: absolute;
-  color: #fef08a;
+  color:  #fef08a;
   font-size: calc(60px * 0.24);
   top: 50%;
   left: 50%;
@@ -1085,7 +1064,7 @@ video {
   animation-duration: 1s;
   border-left-width: calc(60px / 25);
   border-top-width: calc(60px / 25);
-  border-left-color: #fef08a;
+  border-left-color:  #fef08a;
   border-left-style: solid;
   border-top-style: solid;
   border-top-color: transparent;
@@ -1140,7 +1119,7 @@ video {
   position: absolute;
   border-radius: 50%;
   border: 2px solid transparent;
-  border-top-color: #fef08a;
+  border-top-color:  #fef08a;
   animation: fingerprint-spinner-animation 1500ms cubic-bezier(0.680, -0.750, 0.265, 1.750) infinite forwards;
   margin: auto;
   bottom: 0;
@@ -1227,18 +1206,18 @@ video {
   top: 0;
   left: 0;
   border-radius: 50%;
-  border: calc(60px * 0.03) solid #fef08a;
+  border: calc(60px * 0.03) solid  #fef08a;
   animation: fulfilling-bouncing-circle-spinner-orbit-animation infinite 4000ms ease;
 }
 
 .fulfilling-bouncing-circle-spinner .circle {
   height: 60px;
   width: 60px;
-  color: #fef08a;
+  color:  #fef08a;
   display: block;
   border-radius: 50%;
   position: relative;
-  border: calc(60px * 0.1) solid #fef08a;
+  border: calc(60px * 0.1) solid  #fef08a;
   animation: fulfilling-bouncing-circle-spinner-circle-animation infinite 4000ms ease;
   transform: rotate(0deg) scale(1);
 }
@@ -1350,21 +1329,21 @@ video {
   left: 0%;
   top: 0%;
   animation: orbit-spinner-orbit-one-animation 1200ms linear infinite;
-  border-bottom: 3px solid #fef08a;
+  border-bottom: 3px solid  #fef08a;
 }
 
 .orbit-spinner .orbit:nth-child(2) {
   right: 0%;
   top: 0%;
   animation: orbit-spinner-orbit-two-animation 1200ms linear infinite;
-  border-right: 3px solid #fef08a;
+  border-right: 3px solid  #fef08a;
 }
 
 .orbit-spinner .orbit:nth-child(3) {
   right: 0%;
   bottom: 0%;
   animation: orbit-spinner-orbit-three-animation 1200ms linear infinite;
-  border-top: 3px solid #fef08a;
+  border-top: 3px solid  #fef08a;
 }
 
 @keyframes orbit-spinner-orbit-one-animation {
@@ -1405,14 +1384,14 @@ video {
   height: 50px;
   width: 50px;
   position: relative;
-  border: 4px solid #fef08a;
+  border: 4px solid  #fef08a;
   animation: fulfilling-square-spinner-animation 4s infinite ease;
 }
 
 .fulfilling-square-spinner .spinner-inner {
   vertical-align: top;
   display: inline-block;
-  background-color: #fef08a;
+  background-color:  #fef08a;
   width: 100%;
   opacity: 1;
   animation: fulfilling-square-spinner-inner-animation 4s infinite ease-in;
@@ -1480,7 +1459,7 @@ video {
   height: calc(65px * 0.25 / 1.3);
   width:  calc(65px * 0.25 / 1.3);
   animation-duration: 1000ms;
-  border: calc(65px * 0.04 / 1.3) solid #fef08a;
+  border: calc(65px * 0.04 / 1.3) solid  #fef08a;
   margin-right: auto;
   margin-left: auto;
   position: absolute;
@@ -1529,10 +1508,6 @@ video {
   50% {
     transform: translate(150%,-150%) scale(2,2);
   }
-}
-
-.my-shadow {
-  box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
 }
 
 .hover\:border-opacity-75:hover {
@@ -1592,8 +1567,30 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:mx-12 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
+  }
+
+  .md\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .md\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .md\:w-3\/4 {
+    width: 75%;
+  }
+
+  .md\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 }
 

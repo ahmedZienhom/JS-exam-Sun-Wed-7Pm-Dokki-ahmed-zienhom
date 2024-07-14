@@ -15,6 +15,7 @@ const contact = document.querySelector(`li.contact`);
 
 
 search.addEventListener(`click` , _ => {
+    document.querySelector(`.m-offset2`).style.marginLeft = `${document.querySelector(`.img-bar`).offsetWidth}px`;
     foodList.classList.add(`hidden`);
     document.querySelector(`.searchContainer`).classList.remove(`hidden`);
     openClose();
@@ -96,11 +97,11 @@ function showDEtails(detailsApi) {
     }
 
 
-    let container = `<div class="w-1/3 px-3 mt-6">
+    let container = `<div class="w-full md:w-1/3 md:px-3 mt-6">
         <img src="${detailsApi.strMealThumb}" alt="" class="w-full rounded-xl detials-img"/>
         <h3 class="font-medium text-4xl capitalize">${detailsApi.strMeal}</h3>
     </div>
-    <div class="w-2/3  px-3 mt-6">
+    <div class="w-full md:w-2/3  md:px-3 mt-6">
         <h2 class="font-medium text-4xl capitalize mb-2">Instructions</h2>
         <p class="mb-4">${detailsApi.strInstructions}</p>
         <h3 class="mb-2 capitalize text-3xl"><span class="font-bold">area :</span> ${detailsApi.strArea}</h3>
@@ -121,6 +122,7 @@ function showDEtails(detailsApi) {
 
     detailsContainer.innerHTML = container;
 
+    document.querySelector(`.m-offset`).style.marginLeft = `${document.querySelector(`.img-bar`).offsetWidth}px`;
     details.classList.remove(`hidden`);
     foodList.classList.add(`hidden`);
     
@@ -308,7 +310,7 @@ function showContact() {
     let validArr = [];
     container = `
                     <div class="min-h-screen flex justify-center items-center w-full px-3 mt-6">
-                        <div class="container mx-auto w-3/4 text-center">
+                        <div class="container mx-auto w-5/6 md:w-3/4 text-center">
                             <div class="flex flex-wrap">
                                 <div class="w-full md:w-1/2 px-3 mt-6">
                                     <input  type="text" id="nameInput" placeholder="Enter Your Name" autocomplete="off" class="w-full bg-white px-3 py-2 bg-clip-padding rounded-md block text-black outline-offset-0 shadow-md  shadow-transparent focus:shadow-blue-400 border-gray-300 border border-solid inset-0"/>
